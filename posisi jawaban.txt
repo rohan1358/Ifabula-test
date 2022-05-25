@@ -1,0 +1,17 @@
+posisi jawaban dari soal PseudoCode
+1 . PseudoCode -> deret.js
+2 . PseudoCode -> fibonacci.js
+3 . PseudoCode -> segitigaSiku.js
+4 . PseudoCode -> pembilang.js
+posisi jawaban dari soal Utama
+1 . Utama -> src -> App.js line : 6
+2 . Utama -> src -> App.js line : 176
+3 . Utama -> src -> App.js line : 137
+4 . Utama -> src -> App.js line : 191
+5 . Utama -> src -> App.js line : 163
+6 . Utama -> src -> App.js line : 165
+7 . Utama -> src -> App.js line : 151
+8 . 
+9 . Utama -> src -> LoginRegister.js
+10 . NodeJs -> index.js line : 6 & 25
+11 . NodeJs -> index.js line : 8 & 27
