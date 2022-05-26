@@ -5,14 +5,14 @@ posisi jawaban dari soal PseudoCode
 4 . PseudoCode -> pembilang.js
 posisi jawaban dari soal Utama
 https://github.com/rohan1358/jawaban-utama.git
-1 . Utama -> src -> App.js line : 6
-2 . Utama -> src -> App.js line : 176
-3 . Utama -> src -> App.js line : 137
-4 . Utama -> src -> App.js line : 191
-5 . Utama -> src -> App.js line : 163
-6 . Utama -> src -> App.js line : 165
-7 . Utama -> src -> App.js line : 151
+1 . Utama -> src -> App.js - line : 5
+2 . Utama -> src -> App.js - line : 180
+3 . Utama -> src -> App.js - line : 137
+4 . Utama -> src -> App.js - line : 199
+5 . Utama -> src -> App.js - line : 163
+6 . Utama -> src -> App.js - line : 165
+7 . Utama -> src -> App.js - line : 151
 8 . testdebug.html
 9 . Utama -> src -> LoginRegister.js
-10 . NodeJs -> index.js line : 6 & 25
-11 . NodeJs -> index.js line : 8 & 27
+10 . NodeJs -> index.js - line : 6 & 25
+11 . NodeJs -> index.js - line : 8 & 27

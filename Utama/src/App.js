@@ -1,6 +1,6 @@
 import cryptoJs from "crypto-js";
 import React, { useEffect, useState } from "react";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 // 1. struktur json array object
 const information = [
@@ -165,20 +165,28 @@ function App() {
     // 6. Hapuslah salah satu key dari object pada json response soal no
 
     let deleted = postsData.filter((data) => data.id !== id);
-    // console.log(id);
+
     setPostsData(deleted);
   };
 
   return (
     <>
       <div className="container-fluid ">
+        <h5>
+          2. Menampilkan 1 label dan buatlah 1 tombol yang bisa merubah value
+          label.
+        </h5>
         <div className="m-3 border-1  ">
           {/* 2. Menampilkan 1 label dan buatlah 1 tombol yang bisa merubah value label. */}
           {information.slice(0, 1).map((data, index) => {
             return <RenderInformation data={data} index={index} />;
           })}
         </div>
-
+        <hr />
+        <h5>
+          4. Membuat 1 html dengan mencetak hasil response dari soal no 3 ke
+          dalam bentuk table. Tampilkan maksimal 10 data.
+        </h5>
         <div>
           <table class="table">
             <thead>
@@ -210,7 +218,7 @@ function App() {
             }}
             className="btn btn-success fw-bold"
           >
-            Move To Answer 9 >
+            Jawaban soal No 9
           </button>
         </div>
       </div>
@@ -222,38 +230,47 @@ const RenderInformation = ({ data, index }) => {
   const [inputEdit, setInputEdit] = useState(false);
   const [value, setValue] = useState(data.title);
   return (
-    <ul className="list-group list-group-horizontal ">
-      <li className="list-group-item">
-        <form
-          onSubmit={(e) => {
-            e.preventDefault();
-            setInputEdit(false);
-          }}
-        >
-          <input
-            onChange={(e) => {
-              setValue(e.target.value);
+    <ul className="list-group list-group-horizontal align-items-center ">
+      <li
+        className="list-group-item "
+        style={{
+          minWidth: "600px",
+        }}
+      >
+        {inputEdit ? (
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              setInputEdit(false);
             }}
-            id={index}
-            value={value}
-            className="form-control m-0 border-0 bg-white  "
-            type="text"
-            aria-label="default input example"
-            style={{
-              width: "600px",
-            }}
-            disabled={!inputEdit}
-          />
-        </form>
+          >
+            <input
+              onChange={(e) => {
+                setValue(e.target.value);
+              }}
+              onBlur={() => {
+                setInputEdit(false);
+              }}
+              id={index}
+              value={value}
+              className="form-control m-0 border-0 bg-white  "
+              type="text"
+              aria-label="default input example"
+              disabled={!inputEdit}
+            />
+          </form>
+        ) : (
+          value
+        )}
       </li>
-      <li className="list-group-item">
+      <li className="list-group-item p-0 ms-2">
         <button
           type="button"
           onClick={async () => {
-            await setInputEdit(!inputEdit);
+            await setInputEdit(true);
             document.getElementById(index).focus();
           }}
-          className="btn btn-primary btn-sm"
+          className="btn btn-primary btn-sm m-0 "
         >
           Edit
         </button>
