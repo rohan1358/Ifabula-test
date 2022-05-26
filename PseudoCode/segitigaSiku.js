@@ -1,4 +1,5 @@
-for (let x = 0; x < 5; x++) {
+let jumlahSegitiga = 5;
+for (let x = 0; x < jumlahSegitiga; x++) {
   let newX = x + 1;
   console.log(newX);
 

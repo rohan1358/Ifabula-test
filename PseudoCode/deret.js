@@ -1,4 +1,5 @@
-for (let index = 0; index < 100; index++) {
+let deret = 100;
+for (let index = 0; index < deret; index++) {
   let newIndex = index + 1;
   let kelipatan5 = newIndex % 5;
   if (newIndex > 80) {
